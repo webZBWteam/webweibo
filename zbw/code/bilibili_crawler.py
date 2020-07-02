@@ -8,7 +8,7 @@ import glob
 import time
 import pymysql
 import random
-
+import csv
 def error(brower):
     print('error!!!!!')
     brower.quit()
@@ -61,6 +61,13 @@ for k,v in dic.items():
 print(key)
 print(val)
 brower.quit()
-
+data=[]
+csvfile = open("csv_test.csv","w",newline = "")
+writer = csv.writer(csvfile)
+for aa,bb in zip(a,b):
+    data.append([aa,bb])
+writer.writerows(data)
+#关闭csv对象
+csvfile.close()
 
 
