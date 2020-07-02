@@ -593,9 +593,9 @@ a.btn:hover {
   font-size: 14px;
 }
 .portfolio-section .item-inner .content .action {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
+	position: absolute;
+	bottom: 31px;
+	left: 34px;
 }
 .portfolio-section .item-inner .link-mask {
   display: block;
@@ -613,10 +613,11 @@ a.btn:hover {
   color: #666;
 }
 .contact-section .intro .profile-image {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  left: 30px;
+	width: 255px;
+	height: 321px;
+	position: absolute;
+	left: 403px;
+	top: -23px;
 }
 .contact-section .intro p {
   margin-bottom: 15px;
