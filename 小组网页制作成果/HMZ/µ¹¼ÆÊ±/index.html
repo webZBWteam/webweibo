@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>18级毕业倒计时</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<!-- //css files -->
+<!-- Supportive-JavaScript --> 
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- online-fonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet"><body>
+</head>
+<body>
+<!--header-->
+	<div class="countdown-timer-w3laits">
+		<div class="starts">
+			<h2>18级毕业倒计时</h2>
+			<p>距离2022.06.23我们还有这么长时间可以努力</p>
+		</div>
+	</div>
+<!--//header-->
+
+
+
+<!-- Countdown-timer -->
+
+				<div class="examples">
+					<div class="simply-countdown-losange" id="simply-countdown-losange"></div>
+				</div>
+		
+			<div class="clear"></div>
+	
+<!-- //Countdown-timer -->
+
+	<!-- Custom-JavaScript-File-Links -->
+	<!-- Countdown-Timer-JavaScript -->
+			<script src="js/simplyCountdown.js"></script>
+			<script>
+				//时间节点为2022.06.23 00:00 毕业时间
+				//gettime得到毫秒
+				var d = new Date(new Date().getTime() + 2159 * 120 * 120 * 2000);
+
+				// default example
+				simplyCountdown('.simply-countdown-one', {
+					year: d.getFullYear(),
+					month: d.getMonth() + 1,
+					day: d.getDate()
+				});
+
+				// inline example
+				simplyCountdown('.simply-countdown-inline', {
+					year: d.getFullYear(),
+					month: d.getMonth() + 1,
+					day: d.getDate(),
+					inline: true
+				});
+
+				//jQuery example
+				$('#simply-countdown-losange').simplyCountdown({
+					year: d.getFullYear(),
+					month: d.getMonth() + 1,
+					day: d.getDate(),
+					enableUtc: false
+				});
+			</script>
+		<!-- //Countdown-Timer-JavaScript -->
+	<!-- //Custom-JavaScript-File-Links -->
+
+
+
+
+</body>
+</html>

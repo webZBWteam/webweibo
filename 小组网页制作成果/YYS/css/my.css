@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 定义p标签class="tab"首行缩进功能*/
+p.tab {text-indent:2em;}
+
+.footer{
+	position:fixed;
+	bottom:0;
+}/*永远在底部*/
+
+/*-- Video--*/
+.video{
+	/*背景图片*/
+	background:url('../images/NongDa.jpg') no-repeat 0px 0px;
+	background-attachment:fixed;
+	background-size:cover;
+	padding:100px 0px;
+	text-align:center;
+}
+.video h3{
+	font-size:35px;
+	color:darkgray
+	margin-bottom:40px;
+}
+.video a{
+	color:#fff;
+	border:1px dotted #fff;
+	padding:10px 20px;
+	font-size:30px;
+	margin-bottom:30px;
+	display:inline-block;
+}
+.video p{
+	color:#eee;
+	font-size:14px;
+	width:25%;
+	margin:0 auto;
+	line-height:27px;
+}
+.video .modal-content {
+	background-color:rgba(233, 30, 99, 0.53);
+}
+
+.video .modal-header {
+	min-height: 50px;
+	padding: 0 15px;
+	border-bottom: none;
+}
+.video .modal-header .close {
+	margin: 20px 10px 0 0;
+	color: #FFF;
+	font-size: 30px;
+	outline: none;
+}
+
+.video iframe {
+	width: 100%;
+	height: 500px;
+	border:none;
+}
+/*-- //Video--*/
+
+/*-- 图片放大--*/
+.hover01 figure img {
+	width:55%;
+	height:auto;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+	-webkit-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.2); /*-- 放大倍数--*/
+	transform: scale(1.2);
+}
+/*-- //图片放大--*/
